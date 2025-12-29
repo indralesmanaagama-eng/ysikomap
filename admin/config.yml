@@ -1,22 +1,23 @@
 backend:
   name: github
-  repo: https://github.com/indralesmanaagama-eng/ysikomap
+  repo: indralesmanaagama-eng/ysikomap
   branch: main
 
 media_folder: "assets/img/berita"
 public_folder: "/assets/img/berita"
 
 collections:
-  - name: "berita"
-    label: "Berita"
+  - name: "konten"
+    label: "Konten Website"
     files:
       - file: "content/berita.json"
-        label: "Data Berita"
+        label: "Berita"
         name: "berita"
         fields:
           - label: "Daftar Berita"
             name: "items"
             widget: "list"
+            summary: "{{fields.judul}}"
             fields:
               - { label: "ID", name: "id", widget: "string" }
               - { label: "Judul", name: "judul", widget: "string" }
