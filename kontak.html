@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak – YSI Komap UMY</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body { background: #f8f9fa; font-family: 'Times New Roman', serif; }
+        .header {
+            background: linear-gradient(to right, #0a3a6d, #0f5fa8);
+            padding: 60px 0;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .contact-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        iframe {
+            border-radius: 10px;
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">YSI Komap UMY</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="program-kerja.html">Program Kerja</a></li>
+        <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+        <li class="nav-item"><a class="nav-link" href="publikasi.html">Publikasi</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galeri</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="galeri-foto.html">Foto</a></li>
+            <li><a class="dropdown-item" href="galeri-video.html">Video</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="arsip.html">Arsip</a></li>
+        <li class="nav-item"><a class="nav-link" href="kalender.html">Kalender</a></li>
+        <li class="nav-item"><a class="nav-link active" href="kontak.html">Kontak</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2 px-3" href="pendaftaran.html">Daftar</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="height:72px"></div>
+
+<div class="header">
+    <h1 class="fw-bold">Kontak YSI Komap UMY</h1>
+    <p>Hubungi kami melalui kontak resmi organisasi</p>
+</div>
+
+<div class="container">
+    <div class="row g-4">
+
+        <!-- INFORMASI KONTAK -->
+        <div class="col-md-6">
+            <div class="contact-card">
+                <h4 class="fw-bold mb-3">Informasi Kontak</h4>
+                <p><strong>Alamat Sekretariat:</strong><br> Sekre KOMAP UMY, Gedung Fisip UMY</p>
+
+                <p><strong>WhatsApp:</strong><br>
+                    <a href="https://wa.me/6285292266526" class="btn btn-success mt-2">Chat via WhatsApp</a>
+                </p>
+
+                <p><strong>Email Resmi:</strong><br>
+                    <a href="mailto:ysikomap@umy.ac.id">ppkokomap@umy.ac.id</a>
+                </p>
+
+                <p><strong>Instagram:</strong><br>
+                    <a href="https://instagram.com" target="_blank">@ysi.komapumy</a>
+                </p>
+            </div>
+        </div>
+
+<!-- MAP -->
+<div class="col-md-6">
+    <div class="contact-card">
+        <h4 class="fw-bold mb-3">Lokasi Kami</h4>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.4995709598246!2d110.3190621!3d-7.8119873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af80e5f556361%3A0x55e521f188f2e763!2sFisipol%20UMY!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="bg-dark text-light text-center py-4 mt-5">
+  <p class="mb-1">© 2025 YSI Komap UMY – Young Sustainable Initiative</p>
+  <small>Menginspirasi generasi muda menuju masa depan berkelanjutan</small>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

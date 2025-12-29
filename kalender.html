@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Kalender – YSI Komap UMY</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body { background: #f8f9fa; font-family: 'Times New Roman', serif; }
+
+        .header {
+            background: #0a3a6d;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .calendar-wrapper {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+        }
+
+        .event {
+            background: #e9f3ff;
+            border-left: 5px solid #0a3a6d;
+            padding: 12px 15px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #0f5fa8;
+            color: white;
+            padding: 20px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">YSI Komap UMY</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="program-kerja.html">Program Kerja</a></li>
+        <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+        <li class="nav-item"><a class="nav-link" href="publikasi.html">Publikasi</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galeri</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="galeri-foto.html">Foto</a></li>
+            <li><a class="dropdown-item" href="galeri-video.html">Video</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="arsip.html">Arsip</a></li>
+        <li class="nav-item"><a class="nav-link active" href="kalender.html">Kalender</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2 px-3" href="pendaftaran.html">Daftar</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="height:72px"></div>
+
+<div class="header">
+    <h1 class="fw-bold">Agenda Kalender</h1>
+    <p>Jadwal kegiatan resmi YSI Komap UMY</p>
+</div>
+
+<div class="container">
+
+    <!-- KALENDAR GOOGLE -->
+    <div class="calendar-wrapper mb-5">
+        <h4 class="fw-bold mb-3">Kalender Resmi Kegiatan</h4>
+        <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FJakarta"
+            style="border:0; width:100%; height:500px; border-radius: 10px;" 
+            frameborder="0" scrolling="no">
+        </iframe>
+    </div>
+
+    <!-- LIST AGENDA -->
+    <h4 class="fw-bold mb-3">Agenda Kegiatan (List)</h4>
+
+    <div class="event">
+        <strong>📌 10 Februari 2025</strong><br>
+        Workshop Eco-Enzyme & Pengolahan Sampah Rumah Tangga
+    </div>
+
+    <div class="event">
+        <strong>📌 20 Februari 2025</strong><br>
+        Sharing Session: “Pemuda & Aksi Iklim di Lingkungan Kampus”
+    </div>
+
+    <div class="event">
+        <strong>📌 2 Maret 2025</strong><br>
+        Aksi Bersih Sungai & Edukasi Lingkungan
+    </div>
+
+    <div class="event">
+        <strong>📌 15 Maret 2025</strong><br>
+        Penanaman 500 Bibit Pohon di Wilayah Kasihan
+    </div>
+
+    <div class="event">
+        <strong>📌 25 Maret 2025</strong><br>
+        Pelatihan Desain Kampanye Lingkungan untuk Mahasiswa
+    </div>
+
+</div>
+
+
+<footer class="bg-dark text-light text-center py-4 mt-5">
+  <p class="mb-1">© 2025 YSI Komap UMY – Young Sustainable Initiative</p>
+  <small>Menginspirasi generasi muda menuju masa depan berkelanjutan</small>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
