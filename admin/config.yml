@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: https://github.com/indralesmanaagama-eng/ysikomap
+  branch: main
+
+media_folder: "assets/img/berita"
+public_folder: "/assets/img/berita"
+
+collections:
+  - name: "berita"
+    label: "Berita"
+    files:
+      - file: "content/berita.json"
+        label: "Data Berita"
+        name: "berita"
+        fields:
+          - label: "Daftar Berita"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Judul", name: "judul", widget: "string" }
+              - { label: "Ringkasan", name: "ringkasan", widget: "text" }
+              - { label: "Tanggal", name: "tanggal", widget: "datetime" }
+              - { label: "Gambar", name: "gambar", widget: "image", required: false }
+              - { label: "Konten", name: "konten", widget: "markdown" }
